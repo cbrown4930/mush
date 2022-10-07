@@ -1,6 +1,3 @@
-# SPDX-FileCopyrightText: 2020 by Bryan Siepert, written for Adafruit Industries
-#
-# SPDX-License-Identifier: Unlicense
 import time
 import board
 import busio
@@ -16,8 +13,8 @@ print("Serial number:", [hex(i) for i in scd4x.serial_number])
 
 # SETUP FANS
 fan1 = digitalio.DigitalInOut(board.GP27)
-fan2 = digitalio.DigitalInOut(board.GP26)
 fan1.direction = digitalio.Direction.OUTPUT
+fan2 = digitalio.DigitalInOut(board.GP26)
 fan2.direction = digitalio.Direction.OUTPUT
 
 # SETUP HUMIDIFIER
